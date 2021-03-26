@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/porudzbina'>
+<table>
+<p>Unesite sta zelite da jedete:</p>
+<tr><td>Ime:</td><td><input name='ime' type='TEXT' width='60'></td></tr>
+<tr><td>Hrana:</td><td><input name='hrana' type='TEXT' ></td></tr>
+<tr><td>Prilozi:</td><td><input name='prilozi' type='TEXT' ></td></tr>
+<tr><td>Dodatno:</td><td><input name='dodatno' type='TEXT' ></td></tr>
+<tr><td>Cena:</td><td><input name='cena' type='TEXT' value='0' ></td></tr>
+</table>
+<p>Kada zavsite kliknite posalji:</p>
+<p><input value='Posalji!' type='SUBMIT'></p>
+</form>
+
+
+{% endblock %}
